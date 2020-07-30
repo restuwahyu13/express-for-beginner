@@ -26,12 +26,3 @@ Berikut ini adalah **Basic** penggunaan **Framework Express** yang dimana ini sa
 |  Login                    | http://localhost:3000/user/login | POST
 |  Home                 | http://localhost:3000/  | GET
 |  Logout                  | http://localhost:3000/resendtoken  | GET
-
-
-#### How To Deploy Application:
-
-+	install **Heroku CLI** terlebih dahulu [disini](https://bit.ly/3eHzVjH)
-+	buka **terminal** ketikan `heroku login` pada **terminal**
-+	buat nama domain anda sendiri dengan mengetikan `heroku create` di ikuti dengan nama yang anda inginkan
-+	 ketikan `git Init` -> `git add .` -> `git commit -m` pada **terminal** jika ingin mendeploy aplikasi
-+	kemudian tes aplikasi via local server **Heroku** dengan mengetikan `heroku local` jika sudah berjalan dengan lancar, tekan **CTRl + C** dan kemudian ketikan `git push heroku master`
