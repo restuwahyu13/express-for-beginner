@@ -1,0 +1,62 @@
+<%- include('templates/navbar.ejs') %>
+
+<div class="container position-relative mx-auto mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <%- message() %>
+    </div>
+  </div>
+</div>
+
+<div class="container position-relative mx-auto">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header bg-primary">
+          <h4 class="text-light">Form Register</h4>
+        </div>
+        <div class="card-body">
+          <form action="/user/register" method="POST" enctype="multipart/form-data">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" class="form-control" placeholder="Enter Username" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="username">Avatar</label>
+                <div class="custom-file mb-3">
+                  <input type="file" name="avatar" class="custom-file-input" accept="image/*"/>
+                  <label class="custom-file-label">Choose file</label>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-12">
+              <div class="form-group">
+                <label for="username">Avatar Cadangan</label>
+                <div class="custom-file mb-3">
+                  <input type="file" name="avatar-c" class="custom-file-input" required />
+                  <label class="custom-file-label">Choose file</label>
+                </div>
+              </div>
+            </div> -->
+            <div class="col-12">
+              <div class="form-group">
+                <label for="username">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Enter Password" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary col-12">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('templates/footer.ejs') %>

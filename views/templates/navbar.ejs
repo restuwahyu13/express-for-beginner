@@ -1,0 +1,42 @@
+<%- include('header.ejs') %>
+
+<nav class="navbar navbar-expand-sm bg-primary">
+  <a class="navbar-brand text-white" href="/user/login">Express Complete Beginner</a>
+  <ul class="navbar-nav ml-auto">
+    <% if(auth) { %>
+    <li class="nav-item">
+      <% if(pathname === '/') { %>
+      <a class="nav-link font-weight-bold" href="/" style="display: block; color: black;">Home</a>
+      <% } else { %>
+      <a class="nav-link" href="/" style="display: block; color: white;">Home</a>
+      <%} %>
+    </li>
+    <li class="nav-item">
+      <% if(pathname === '/user/logout') { %>
+      <a class="nav-link font-weight-bold" href="/user/logout" style="display: block; color: black;"
+        >Logout</a
+      >
+      <% } else { %>
+      <a class="nav-link" href="/user/logout" style="display: block; color: white;">Logout</a>
+      <%} %>
+    </li>
+    <% } else {%>
+    <li class="nav-item">
+      <% if(pathname === '/user/login') { %>
+      <a class="nav-link font-weight-bold" href="/user/login" style="display: block; color: black;">Login</a>
+      <% } else { %>
+      <a class="nav-link" href="/user/login" style="display: block; color: white;">Login</a>
+      <%} %>
+    </li>
+    <li class="nav-item">
+      <% if(pathname === '/user/register') { %>
+      <a class="nav-link font-weight-bold" href="/user/register" style="display: block; color: black;"
+        >Register</a
+      >
+      <% } else { %>
+      <a class="nav-link" href="/user/register" style="display: block; color: white;">Register</a>
+      <%} %>
+    </li>
+    <%} %>
+  </ul>
+</nav>
