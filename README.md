@@ -21,8 +21,8 @@ Berikut ini adalah **Basic** penggunaan **Framework Express** yang dimana ini sa
 #### Endpoit Routes :
 
 | Name | Route Name | Request Method |
-| ----------------------- | ------------------|
-|  Register                    | http://localhost:3000/user/register | POST
-|  Login                    | http://localhost:3000/user/login | POST
-|  Home                 | http://localhost:3000/  | GET
-|  Logout                  | http://localhost:3000/resendtoken  | GET
+| -----| -----------| ---------------|
+| Register | http://localhost:3000/user/register | POST
+| Login | http://localhost:3000/user/login | POST
+| Home | http://localhost:3000/ | GET
+| Logout | http://localhost:3000/resendtoken | GET
